@@ -57,4 +57,8 @@ Interface dalam program ini diterapkan melalui interface `CetakStruk` yang memil
 Program akan terus berjalan dan menampilkan kembali menu utama selama pengguna belum memilih menu Keluar. Dengan demikian, pengguna dapat melakukan beberapa proses pengelolaan data dalam satu kali menjalankan program.
 
 ## Penerapan JDBC
-JDBC dalam program ini diterapkan melalui 
+JDBC dalam program ini diterapkan untuk menghubungkan program dengan database MySQL. Penerapannya terdapat pada package `config`, melalui class `Koneksi.java` untuk mengatur koneksi database, serta package `model` yang berisi class DAO, yaitu `MemberDAO`, `InstrukturDAO`, `JenisKelasDAO`, dan `KelasPilatesDAO` untuk mengelola data masing-masing entitas.
+
+Program ini menggunakan pengimplementasian `Connection` untuk mengakses database, `PreparedStatement` untuk menjalankan query SQL dengan parameter, dan `ResultSet` untuk membaca hasil query. JDBC mendukung operasi CRUD sehingga data member, instruktur, jenis kelas, dan sesi kelas dapat ditambahkan, ditampilkan, diperbarui, dan dihapus melaluiprogram serta tersimpan dalam database MySQL. Dengan adanya JDBC kita tidak perlu lagi menyimpan data dalam bentuk ArrayList karena penyimpanan data langsung ke database dan data tersimpan secara permanen bahkan ketika program telah berhenti.
+
+
