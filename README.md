@@ -55,3 +55,6 @@ Abstraction dalam program ini diterapkan melalui abstract class JenisKelas dan a
 ## Penerapan Interface
 Interface dalam program ini diterapkan melalui interface `CetakStruk` yang memiliki method `cetakStruk()`. Interface ini berfungsi sebagai kontrak yang menentukan bahwa class yang mengimplementasikannya harus memiliki method `cetakStruk()`. Pada program, struk akan dicetak setiap kali selesai melakukan pendaftaran kelas dan setelah melakukan update status kelas. Dengan demikian, interface `CetakStruk` membantu membuat proses pencetakan struk lebih terstruktur dan memastikan informasi dari setiap proses dapat ditampilkan kepada pengguna.
 Program akan terus berjalan dan menampilkan kembali menu utama selama pengguna belum memilih menu Keluar. Dengan demikian, pengguna dapat melakukan beberapa proses pengelolaan data dalam satu kali menjalankan program.
+
+## Penerapan JDBC
+JDBC dalam program ini diterapkan melalui 
